@@ -9,6 +9,12 @@ public class Test1 {
 		{
 			System.out.println("Product as been created Successfully");
 		}
+		@Test
+		public void createProduct1()
+		{
+			System.out.println("Product failed to create");
+		}
+		
 		
 	}
 
