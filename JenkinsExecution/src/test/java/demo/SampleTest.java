@@ -4,11 +4,14 @@ import org.testng.annotations.Test;
 
 public class SampleTest {
 	@Test
-	public void createProduct(String BROWSER, String url)
+	public void createProduct()
 	{
-		System.out.println("Hi, Welcome");
 		
-		System.out.println("ROWSER======>"+BROWSER+", URL===>"+url);
+		 String BROWSER = System.getProperty("browser");
+	        String url = System.getProperty("url");  // Example of how you can set 'url'
 
+	        System.out.println("Hi, Welcome");
+
+	        System.out.println("BROWSER======>" + BROWSER + ", URL===>" + url);
 	}
 }
