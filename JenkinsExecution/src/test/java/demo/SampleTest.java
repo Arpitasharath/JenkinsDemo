@@ -7,8 +7,9 @@ public class SampleTest {
 	public void createProduct()
 	{
 		
-		 String BROWSER = System.getProperty("browser");
-	        String url = System.getProperty("url");  // Example of how you can set 'url'
+		String BROWSER = System.getProperty("browser", System.getenv("BROWSER"));
+		String url = System.getProperty("url", System.getenv("URL"));
+
 
 	        System.out.println("Hi, Welcome");
 
